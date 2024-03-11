@@ -64,7 +64,7 @@ jobs:
           vcpkg install vulkan-sdk-components
           vcpkg install catch2
           vcpkg integrate install
-          cmake -G "Visual Studio 17 2022" -A x64 -DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake .. && msbuild yuzu.sln
+          cmake -G "Visual Studio 17 2022" -A x64  .. && msbuild suyu.sln
 
       - name: Upload Windows artifact
         uses: actions/upload-artifact@v2
