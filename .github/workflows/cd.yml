@@ -2,8 +2,9 @@ name: Compile C App
 
 on:
   push:
-    branches:
-      -dev
+    branches: [ "dev" ]
+  pull_request:
+    branches: [ "dev" ]
 
 jobs:
   build:
