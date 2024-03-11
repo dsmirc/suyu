@@ -5,10 +5,10 @@ name: yuzu-ci
 
 on:
   push:
-    branches: [ master ]
+    branches: [ dev ]
     tags: [ "*" ]
   pull_request:
-    branches: [ master ]
+    branches: [ dev ]
 
 jobs:
   transifex:
